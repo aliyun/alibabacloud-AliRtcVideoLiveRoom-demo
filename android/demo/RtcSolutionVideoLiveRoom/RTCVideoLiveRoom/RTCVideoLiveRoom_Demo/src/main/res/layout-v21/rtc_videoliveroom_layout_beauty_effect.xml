@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rtc_videoliveroom_margin_20">
+
+        <TextView
+            android:id="@+id/rtc_videoliveroom_tv_whitening"
+            android:layout_width="@dimen/rtc_videoliveroom_width_tv_whitening_80"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/rtc_videoliveroom_string_whitening"
+            android:textColor="@color/rtc_videoliveroom_color_text_white"
+            android:textSize="@dimen/rtc_videoliveroom_size_text_16" />
+
+        <SeekBar
+            android:id="@+id/rtc_videoliveroom_progress_whitening"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rtc_videoliveroom_tv_whitening"
+            android:max="10"
+            android:maxHeight="@dimen/rtc_videoliveroom_line_1px"
+            android:progressDrawable="@drawable/rtc_videoliveroom_bg_beauty_seekbar_shape"
+            android:splitTrack="false"
+            android:thumb="@drawable/rtc_videoliveroom_seekbar_thumb_shape" />
+
+        <TextView
+            android:id="@+id/rtc_videoliveroom_tv_whitening_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rtc_videoliveroom_progress_whitening"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_36"
+            android:textColor="@color/rtc_videoliveroom_color_text_white"
+            android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rtc_videoliveroom_margin_45">
+
+        <TextView
+            android:id="@+id/rtc_videoliveroom_tv_smoothness"
+            android:layout_width="@dimen/rtc_videoliveroom_width_tv_whitening_80"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/rtc_videoliveroom_string_smoothness"
+            android:textColor="@color/rtc_videoliveroom_color_text_white"
+            android:textSize="@dimen/rtc_videoliveroom_size_text_16" />
+
+        <SeekBar
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_20"
+            android:id="@+id/rtc_videoliveroom_progress_smoothness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rtc_videoliveroom_tv_smoothness"
+            android:max="10"
+            android:maxHeight="@dimen/rtc_videoliveroom_line_1px"
+            android:progressDrawable="@drawable/rtc_videoliveroom_bg_beauty_seekbar_shape"
+            android:splitTrack="false"
+            android:thumb="@drawable/rtc_videoliveroom_seekbar_thumb_shape" />
+
+        <TextView
+            android:id="@+id/rtc_videoliveroom_tv_smoothness_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rtc_videoliveroom_progress_smoothness"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_36"
+            android:textColor="@color/rtc_videoliveroom_color_text_white"
+            android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rtc_videoliveroom_height_bottom_dialog_222">
+
+    <com.aliyun.rtc.videoliveroom.view.NoScrollViewPager
+        android:layout_marginTop="@dimen/rtc_videoliveroom_margin_26"
+        android:id="@+id/rtc_videoliveroom_vp_content_bottom_dialog"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </com.aliyun.rtc.videoliveroom.view.NoScrollViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:paddingLeft="@dimen/rtc_videoliveroom_margin_20"
+        android:paddingRight="@dimen/rtc_videoliveroom_margin_20"
+        android:background="@color/rtc_videoliveroom_color_bg_tablayout_function"
+        android:id="@+id/rtc_videoliveroom_tablayout_bottom_dialog"
+        app:tabMode="scrollable"
+        app:tabGravity="center"
+        app:tabTextColor="@color/rtc_videoliveroom_color_text_white"
+        app:tabIndicatorColor="@color/rtc_videoliveroom_color_text_white"
+        app:tabIndicatorHeight="@dimen/rtc_videoliveroom_height_tablayout_2"
+        app:tabSelectedTextColor="@color/rtc_videoliveroom_color_text_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

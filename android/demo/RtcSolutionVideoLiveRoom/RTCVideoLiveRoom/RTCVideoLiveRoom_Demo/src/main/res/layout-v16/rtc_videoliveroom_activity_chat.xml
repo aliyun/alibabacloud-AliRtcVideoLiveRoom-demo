@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/rtc_videoliveroom_color_room_background"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rtc_videoliveroom_rl_play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.aliyun.rtc.videoliveroom.play.AliLivePlayerView
+            android:id="@+id/rtc_videoliveroom_surface_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/rtc_videoliveroom_tv_live_not_begin"
+            android:textColor="@color/rtc_videoliveroom_color_text_white"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/rtc_videoliveroom_size_text_17"
+            android:text="@string/rtc_videoliveroom_string_live_not_begin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <com.aliyun.rtc.videoliveroom.view.RTCUserChatView
+        android:id="@+id/rtc_videoliveroom_view_interactive_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rtc_videoliveroom_bg_title" />
+
+    <RelativeLayout
+        android:id="@+id/rtc_videoliveroom_rl_content_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="@dimen/rtc_videoliveroom_width_room_num_184"
+            android:layout_height="@dimen/rtc_videoliveroom_height_tv_48"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_16"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_14"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rtc_videoliveroom_iv_display_user"
+                android:layout_width="@dimen/rtc_videoliveroom_width_live_cover_40"
+                android:layout_height="@dimen/rtc_videoliveroom_width_live_cover_40"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_14"
+                android:layout_toRightOf="@id/rtc_videoliveroom_iv_display_user"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rtc_videoliveroom_ll_experience_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/rtc_videoliveroom_width_red_point_4"
+                        android:layout_height="@dimen/rtc_videoliveroom_width_red_point_4"
+                        android:background="@drawable/rtc_videoliveroom_bg_red_point_shape" />
+
+                    <TextView
+                        android:id="@+id/rtc_videoliveroom_tv_experience_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_6"
+                        android:textColor="@color/rtc_videoliveroom_color_text_white"
+                        android:textSize="@dimen/rtc_videoliveroom_size_text_10" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rtc_videoliveroom_tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/rtc_videoliveroom_margin_2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/rtc_videoliveroom_color_text_white"
+                    android:textSize="@dimen/rtc_videoliveroom_size_text_16" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/rtc_videoliveroom_iv_close_chat"
+            android:layout_width="@dimen/rtc_videoliveroom_width_imageview_28"
+            android:layout_height="@dimen/rtc_videoliveroom_width_imageview_28"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_20"
+            android:src="@drawable/rtc_close_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rtc_videoliveroom_rl_funtion_interactive_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/rtc_videoliveroom_margin_20"
+        android:layout_marginRight="@dimen/rtc_videoliveroom_margin_20"
+        android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_20">
+
+        <LinearLayout
+            android:id="@+id/rtc_videoliveroom_ll_beauty_interactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:src="@drawable/rtc_videoliveroom_beauty_gray" />
+
+            <TextView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:gravity="center_horizontal"
+                android:text="@string/rtc_videoliveroom_string_beauty"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_toRightOf="@id/rtc_videoliveroom_ll_beauty_interactive"
+            android:id="@+id/rtc_videoliveroom_ll_switchcamera_interactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_28"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:src="@drawable/rtc_videoliveroom_switchcamera_gray" />
+
+            <TextView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:gravity="center_horizontal"
+                android:text="@string/rtc_videoliveroom_string_rotate_camera"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/rtc_videoliveroom_ll_switchcamera_interactive"
+            android:id="@+id/rtc_videoliveroom_ll_audioeffect_interactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_28"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:src="@drawable/rtc_videoliveroom_effect_reverb_gray" />
+
+            <TextView
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:gravity="center_horizontal"
+                android:text="@string/rtc_videoliveroom_string_audio_effect"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rtc_videoliveroom_ll_kickout_interactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:src="@drawable/rtc_videoliveroom_kickout" />
+
+            <TextView
+                android:lines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:gravity="center_horizontal"
+                android:text="@string/rtc_videoliveroom_string_title_kickout_user"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rtc_videoliveroom_ll_funtion_live_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/rtc_videoliveroom_margin_20"
+        android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_20"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rtc_videoliveroom_ll_conn_mic_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rtc_videoliveroom_iv_conn_mic_live"
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:src="@drawable/rtc_videoliveroom_icon_conn_mic_selector" />
+
+            <TextView
+                android:id="@+id/rtc_videoliveroom_tv_conn_mic_live"
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:gravity="center_horizontal"
+                android:text="@string/rtc_videoliveroom_string_conn_mic"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rtc_videoliveroom_ll_switchcamera_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_28"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:src="@drawable/rtc_videoliveroom_switchcamera_gray" />
+
+            <TextView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_48"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:gravity="center_horizontal"
+                android:text="@string/rtc_videoliveroom_string_rotate_camera"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

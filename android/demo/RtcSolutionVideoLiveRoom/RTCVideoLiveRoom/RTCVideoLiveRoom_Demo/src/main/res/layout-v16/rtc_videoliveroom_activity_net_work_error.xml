@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rtc_videoliveroom_color_room_background">
+
+    <ImageView
+        android:id="@+id/iv_close_net_error"
+        android:layout_marginTop="@dimen/rtc_videoliveroom_margin_26"
+        android:layout_marginRight="@dimen/rtc_videoliveroom_margin_26"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/rtc_close_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/rtc_network_error"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_height_group_36"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_10"
+            android:text="@string/alivc_rtc_net_work_error_tips1"
+            android:textColor="@color/alivc_common_white"
+            android:textSize="@dimen/alivc_common_font_18" />
+
+        <TextView
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_10"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alivc_common_height_group_20"
+            android:gravity="center"
+            android:text="@string/alivc_rtc_net_work_error_tips2"
+            android:textColor="@color/alivc_common_white"
+            android:textSize="@dimen/alivc_common_font_14" />
+
+        <TextView
+            android:id="@+id/tv_retry_net_error"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_36"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_36"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rtc_videoliveroom_height_tv_48"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_34"
+            android:background="@drawable/rtc_videoliveroom_bg_net_error_shape"
+            android:gravity="center"
+            android:text="@string/rtc_videoliveroom_string_try_again"
+            android:textColor="@color/rtc_videoliveroom_color_bg_copy" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <corners android:radius="@dimen/rtc_videoliveroom_margin_2" />
+    <solid android:color="@color/rtc_videoliveroom_color_red_point_timeclock" />
+</shape>

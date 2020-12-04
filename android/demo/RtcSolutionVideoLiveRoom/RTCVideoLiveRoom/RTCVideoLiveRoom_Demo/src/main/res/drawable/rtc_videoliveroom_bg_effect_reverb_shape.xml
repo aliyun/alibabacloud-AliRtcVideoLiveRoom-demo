@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+    <stroke
+        android:width="@dimen/rtc_videoliveroom_width_oval_2"
+        android:color="@color/rtc_videoliveroom_color_bg_switch_track_checked" />
+</shape>

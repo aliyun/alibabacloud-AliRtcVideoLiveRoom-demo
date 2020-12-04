@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rtc_videoliveroom_height_bottom_dialog_222">
+
+    <TextView
+        android:layout_marginTop="@dimen/rtc_videoliveroom_margin_2"
+        android:id="@+id/rtc_videoliveroom_tv_earback"
+        android:textSize="@dimen/rtc_videoliveroom_size_text_12"
+        android:text="@string/rtc_videoliveroom_string_earback"
+        android:textColor="@color/rtc_videoliveroom_color_text_earback"
+        android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Switch
+        android:id="@+id/rtc_videoliveroom_switch_earback"
+        android:layout_toRightOf="@id/rtc_videoliveroom_tv_earback"
+        android:track="@drawable/rtc_videoliveroom_swtich_track_selector"
+        android:thumb="@drawable/rtc_videoliveroom_swtich_thumb_selector"
+        android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_26"
+        android:layout_width="@dimen/rtc_videoliveroom_width_switch_44"
+        android:layout_height="@dimen/rtc_videoliveroom_width_iv_22"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/rtc_videoliveroom_margin_2"
+        android:id="@+id/rtc_videoliveroom_tv_switch_state"
+        android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_10"
+        android:layout_toRightOf="@id/rtc_videoliveroom_switch_earback"
+        android:text="@string/rtc_videoliveroom_string_switch_close"
+        android:textSize="@dimen/rtc_videoliveroom_size_text_12"
+        android:textColor="@color/rtc_videoliveroom_color_text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/rtc_videoliveroom_margin_30"
+        android:layout_below="@id/rtc_videoliveroom_tv_earback"
+        android:id="@+id/rtc_videoliveroom_tv_effect_reverb"
+        android:textSize="@dimen/rtc_videoliveroom_size_text_12"
+        android:text="@string/rtc_videoliveroom_string_effect_reverb"
+        android:textColor="@color/rtc_videoliveroom_color_text_earback"
+        android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rtc_videoliveroom_rcy_audio_effect_reverb"
+        android:layout_marginTop="@dimen/rtc_videoliveroom_margin_30"
+        android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_10"
+        android:layout_below="@id/rtc_videoliveroom_tv_earback"
+        android:layout_toRightOf="@id/rtc_videoliveroom_tv_effect_reverb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

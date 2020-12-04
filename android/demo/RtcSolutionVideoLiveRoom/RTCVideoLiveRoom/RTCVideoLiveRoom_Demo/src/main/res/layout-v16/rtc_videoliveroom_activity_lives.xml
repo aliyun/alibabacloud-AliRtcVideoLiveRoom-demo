@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_main_log"
+        android:scaleType="centerInside" />
+
+    <RelativeLayout
+        android:id="@+id/rtc_videoliveroom_rl_content_live_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_20"
+            android:text="@string/rtc_videoliveroom_string_home_title"
+            android:textColor="@color/rtc_videoliveroom_color_text_gray"
+            android:textSize="@dimen/rtc_videoliveroom_size_text_17" />
+
+        <ImageView
+            android:id="@+id/rtc_videoliveroom_iv_back"
+            android:layout_width="@dimen/rtc_videoliveroom_width_iv_24"
+            android:layout_height="@dimen/rtc_videoliveroom_width_iv_24"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_20"
+            android:src="@drawable/back" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/rtc_videoliveroom_swiperefresh_lives"
+            android:layout_below="@id/rtc_videoliveroom_iv_back"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rtc_videoliveroom_rcy_lives"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:fadingEdge="none" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        <ImageView
+            android:id="@+id/rtc_videoliveroom_iv_begin_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/rtc_videoliveroom_margin_20"
+            android:src="@drawable/rtc_videoliveroom_begin_live_icon" />
+    </RelativeLayout>
+</RelativeLayout>

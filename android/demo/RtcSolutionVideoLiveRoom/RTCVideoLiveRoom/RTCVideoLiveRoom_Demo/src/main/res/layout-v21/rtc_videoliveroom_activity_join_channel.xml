@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/rtc_videoliveroom_surfaceview_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <ImageView
+        android:background="@drawable/rtc_videoliveroom_bg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rtc_videoliveroom_rl_content_join_channel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/rtc_videoliveroom_iv_close_join_channel"
+            android:layout_width="@dimen/rtc_videoliveroom_width_imageview_28"
+            android:layout_height="@dimen/rtc_videoliveroom_width_imageview_28"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_20"
+            android:src="@drawable/rtc_close_icon" />
+
+        <LinearLayout
+            android:id="@+id/rtc_videoliveroom_ll_swtichcamera_join_channel"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_20"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_28"
+                android:layout_height="@dimen/rtc_videoliveroom_width_imageview_28"
+                android:src="@drawable/rtc_videoliveroom_switchcamera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:text="@string/rtc_videoliveroom_string_rotate_camera"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rtc_videoliveroom_ll_beauty_join_channel"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_toLeftOf="@id/rtc_videoliveroom_ll_swtichcamera_join_channel"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/rtc_videoliveroom_width_imageview_28"
+                android:layout_height="@dimen/rtc_videoliveroom_width_imageview_28"
+                android:src="@drawable/rtc_videoliveroom_beauty" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:text="@string/rtc_videoliveroom_string_beauty"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/rtc_videoliveroom_iv_live_cover_join_channel"
+            android:layout_width="@dimen/rtc_videoliveroom_width_live_cover_128"
+            android:layout_height="@dimen/rtc_videoliveroom_width_live_cover_128"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/rtc_videoliveroom_ll_swtichcamera_join_channel"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_30"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_13" />
+
+        <LinearLayout
+            android:id="@+id/rtc_videoliveroom_ll_live_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rtc_videoliveroom_ll_swtichcamera_join_channel"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_64"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_toRightOf="@id/rtc_videoliveroom_iv_live_cover_join_channel"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rtc_videoliveroom_edit_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_12"
+                android:text="@string/rtc_videoliveroom_string_hint_live_title"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rtc_videoliveroom_ll_input_live_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rtc_videoliveroom_ll_swtichcamera_join_channel"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_marginTop="@dimen/rtc_videoliveroom_margin_50"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_20"
+            android:layout_toRightOf="@id/rtc_videoliveroom_iv_live_cover_join_channel"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rtc_videoliveroom_string_text_live_title"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_12" />
+
+            <EditText
+                android:id="@+id/rtc_videoliveroom_et_live_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_6"
+                android:background="@null"
+                android:maxLines="2"
+                android:textColor="@color/rtc_videoliveroom_color_text_white"
+                android:textColorHint="@color/rtc_videoliveroom_color_text_white"
+                android:textSize="@dimen/rtc_videoliveroom_size_text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rtc_videoliveroom_line_1px"
+                android:layout_marginTop="@dimen/rtc_videoliveroom_margin_8"
+                android:background="@color/rtc_videoliveroom_color_text_white" />
+        </LinearLayout>
+
+
+        <com.aliyun.rtc.alivcrtcviewcommon.widget.RTCLoadingButton
+            android:id="@+id/rtc_videoliveroom_tv_join_live"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rtc_videoliveroom_height_tv_48"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/rtc_videoliveroom_margin_40"
+            android:layout_marginRight="@dimen/rtc_videoliveroom_margin_40"
+            android:layout_marginBottom="@dimen/rtc_videoliveroom_margin_150"
+            android:background="@drawable/rtc_videoliveroom_btn_bg_selector"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="@string/rtc_videoliveroom_string_btn_join_channel"
+            android:textColor="@color/rtc_videoliveroom_color_text_white"
+            android:textSize="@dimen/rtc_videoliveroom_size_text_18" />
+    </RelativeLayout>
+</RelativeLayout>

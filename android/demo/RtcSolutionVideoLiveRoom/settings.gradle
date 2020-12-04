@@ -1,0 +1,4 @@
+include ':app'
+include ':RTCSolutionCommon'
+include ':RTCViewCommon'
+include ':RTCVideoLiveRoom:RTCVideoLiveRoom_Demo'

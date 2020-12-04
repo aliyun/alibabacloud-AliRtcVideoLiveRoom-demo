@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.alivc.channel.dao.ChannelDao">
+
+    <insert id="insertChannel">
+	    insert into channel (id, owner_id, cover_url, title, create_datetime)
+	    values
+	    (#{channelId} , #{ownerId} , #{coverUrl}, #{title}, #{createDateTime} )
+    </insert>
+
+    <update id="deleteChannel">
+		delete from channel where id = #{channelId}
+	</update>
+
+    <update id="endChannel">
+		update channel set end_datetime=#{endTime} where id = #{channelId}
+	</update>
+
+    <select id="getChannelList" resultType="com.alivc.channel.pojo.Channel">
+        select id as channelId, owner_id as ownerId,
+        cover_url as coverUrl, title as title , create_datetime as createDateTime , end_datetime as endTime
+        from channel
+        where 1 = 1
+        <if test="lastChannelId != null">
+            AND id > #{lastChannelId}
+        </if>
+        limit #{pageSize}
+    </select>
+
+
+    <select id="getChannel" resultType="com.alivc.channel.pojo.Channel">
+        select id as channelId, owner_id as ownerId, create_datetime as createDateTime, end_datetime as endTime
+        from channel
+        where id = #{channelId}
+    </select>
+
+</mapper>

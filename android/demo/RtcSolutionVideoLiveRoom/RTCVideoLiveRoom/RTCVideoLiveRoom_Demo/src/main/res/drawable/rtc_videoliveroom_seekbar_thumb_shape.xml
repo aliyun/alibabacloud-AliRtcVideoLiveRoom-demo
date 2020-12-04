@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/rtc_videoliveroom_color_seekbar_thumb"/>
+    <size android:width="@dimen/rtc_videoliveroom_margin_16" android:height="@dimen/rtc_videoliveroom_margin_16"/>
+</shape>
